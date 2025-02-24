@@ -13,4 +13,11 @@ class CourseController extends Controller
         $datas = Course::inRandomOrder()->limit(4)->get();
         return $datas;
     }
+
+
+    public function courses()
+    {
+        $datas = Course::inRandomOrder()->get();
+        return $datas;
+    }
 }
