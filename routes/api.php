@@ -3,6 +3,7 @@
 use App\Http\Controllers\API\ChartController;
 use App\Http\Controllers\API\ContactController;
 use App\Http\Controllers\API\CourseController;
+use App\Http\Controllers\API\FooterController;
 use App\Http\Controllers\API\ReviewController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -15,3 +16,4 @@ Route::post('/contact/send', [ContactController::class, 'contactSend']);
 Route::get('/home/course/datas', [CourseController::class, 'homeCourses']);
 Route::get('course/datas', [CourseController::class, 'courses']);
 Route::post('course/detail', [CourseController::class, 'courseDetail']);
+Route::get('footer/data', [FooterController::class, 'footer']);
