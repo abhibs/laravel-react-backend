@@ -13,4 +13,11 @@ class ProjectController extends Controller
         $datas = Project::inRandomOrder()->limit(3)->get();
         return $datas;
     }
+
+
+    public function projects()
+    {
+        $datas = Project::inRandomOrder()->get();
+        return $datas;
+    }
 }

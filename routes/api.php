@@ -23,3 +23,4 @@ Route::get('footer/data', [FooterController::class, 'footer']);
 Route::get('information/data', [InformationController::class, 'information']);
 Route::get('service/datas', [ServiceController::class, 'services']);
 Route::get('home/project/datas', [ProjectController::class, 'homeProjects']);
+Route::get('project/datas', [ProjectController::class, 'projects']);
