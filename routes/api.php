@@ -6,6 +6,7 @@ use App\Http\Controllers\API\CourseController;
 use App\Http\Controllers\API\FooterController;
 use App\Http\Controllers\API\InformationController;
 use App\Http\Controllers\API\ReviewController;
+use App\Http\Controllers\API\ServiceController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -19,3 +20,4 @@ Route::get('course/datas', [CourseController::class, 'courses']);
 Route::post('course/detail', [CourseController::class, 'courseDetail']);
 Route::get('footer/data', [FooterController::class, 'footer']);
 Route::get('information/data', [InformationController::class, 'information']);
+Route::get('service/datas', [ServiceController::class, 'services']);
