@@ -20,4 +20,11 @@ class ProjectController extends Controller
         $datas = Project::inRandomOrder()->get();
         return $datas;
     }
+
+    public function projectDetail(Request $request)
+    {
+        $id = $request->input('id');
+        $data = Project::where('id', $id)->get();
+        return $data;
+    }
 }
