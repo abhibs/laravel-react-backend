@@ -27,4 +27,10 @@ class HomepagecontentController extends Controller
         $techdata = HomepageContent::select('tech_desc')->first();
         return $techdata;
     }
+
+    public function topSection()
+    {
+        $topdata = HomepageContent::select('title', 'subtitle')->first();
+        return $topdata;
+    }
 }

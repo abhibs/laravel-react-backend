@@ -29,3 +29,4 @@ Route::post('project/detail', [ProjectController::class, 'projectDetail']);
 Route::get('video/section/data', [HomepagecontentController::class, 'videoSection']);
 Route::get('count/section/data', [HomepagecontentController::class, 'countSection']);
 Route::get('technology/section/data', [HomepagecontentController::class, 'techSection']);
+Route::get('top/section/data', [HomepagecontentController::class, 'topSection']);
