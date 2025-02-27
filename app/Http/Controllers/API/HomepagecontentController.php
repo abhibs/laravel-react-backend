@@ -13,4 +13,11 @@ class HomepagecontentController extends Controller
         $videodata = HomepageContent::select('video_desc', 'video_url')->first();
         return $videodata;
     }
+
+
+    public function countSection()
+    {
+        $countdata = HomepageContent::select('student', 'course', 'review')->first();
+        return $countdata;
+    }
 }

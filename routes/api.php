@@ -27,3 +27,4 @@ Route::get('home/project/datas', [ProjectController::class, 'homeProjects']);
 Route::get('project/datas', [ProjectController::class, 'projects']);
 Route::post('project/detail', [ProjectController::class, 'projectDetail']);
 Route::get('video/section/data', [HomepagecontentController::class, 'videoSection']);
+Route::get('count/section/data', [HomepagecontentController::class, 'countSection']);
