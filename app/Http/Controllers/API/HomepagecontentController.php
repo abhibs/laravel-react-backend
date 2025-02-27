@@ -20,4 +20,11 @@ class HomepagecontentController extends Controller
         $countdata = HomepageContent::select('student', 'course', 'review')->first();
         return $countdata;
     }
+
+
+    public function techSection()
+    {
+        $techdata = HomepageContent::select('tech_desc')->first();
+        return $techdata;
+    }
 }
